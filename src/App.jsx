@@ -1,16 +1,28 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Authenticate from "./components/Authenticate";
+import SignupForm from './components/SignupForm';
 
-function App() {
-  const [count, setCount] = useState(0)
+
+
+ export default function App() {
+
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    console.log("Hello 👋");
+  }
+
+
 
   return (
     <>
-      
+      <Authenticate/>
+      <SignupForm/>
     </>
+
+
   )
 }
 
-export default App
+
